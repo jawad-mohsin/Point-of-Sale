@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="inventoryDBDataSet6" targetNamespace="http://tempuri.org/inventoryDBDataSet6.xsd" xmlns:mstns="http://tempuri.org/inventoryDBDataSet6.xsd" xmlns="http://tempuri.org/inventoryDBDataSet6.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="inventoryDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="inventoryDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.InventoryManagementSystem.Properties.Settings.GlobalReference.Default.inventoryDBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VendorsViewTableAdapter" GeneratorDataComponentClassName="VendorsViewTableAdapter" Name="VendorsView" UserDataComponentName="VendorsViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="inventoryDBConnectionString (Settings)" DbObjectName="inventoryDB.dbo.VendorsView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT VendorId, VendorName, ThirdCategoryName, VendorStatus, RegisterDate, VendorDescription FROM dbo.VendorsView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="VendorId" DataSetColumn="VendorId" />
+              <Mapping SourceColumn="VendorName" DataSetColumn="VendorName" />
+              <Mapping SourceColumn="ThirdCategoryName" DataSetColumn="ThirdCategoryName" />
+              <Mapping SourceColumn="VendorStatus" DataSetColumn="VendorStatus" />
+              <Mapping SourceColumn="RegisterDate" DataSetColumn="RegisterDate" />
+              <Mapping SourceColumn="VendorDescription" DataSetColumn="VendorDescription" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="inventoryDBDataSet6" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="inventoryDBDataSet6" msprop:Generator_UserDSName="inventoryDBDataSet6">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VendorsView" msprop:Generator_TableClassName="VendorsViewDataTable" msprop:Generator_TableVarName="tableVendorsView" msprop:Generator_TablePropName="VendorsView" msprop:Generator_RowDeletingName="VendorsViewRowDeleting" msprop:Generator_RowChangingName="VendorsViewRowChanging" msprop:Generator_RowEvHandlerName="VendorsViewRowChangeEventHandler" msprop:Generator_RowDeletedName="VendorsViewRowDeleted" msprop:Generator_UserTableName="VendorsView" msprop:Generator_RowChangedName="VendorsViewRowChanged" msprop:Generator_RowEvArgName="VendorsViewRowChangeEvent" msprop:Generator_RowClassName="VendorsViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VendorId" msprop:Generator_ColumnVarNameInTable="columnVendorId" msprop:Generator_ColumnPropNameInRow="VendorId" msprop:Generator_ColumnPropNameInTable="VendorIdColumn" msprop:Generator_UserColumnName="VendorId" type="xs:int" />
+              <xs:element name="VendorName" msprop:Generator_ColumnVarNameInTable="columnVendorName" msprop:Generator_ColumnPropNameInRow="VendorName" msprop:Generator_ColumnPropNameInTable="VendorNameColumn" msprop:Generator_UserColumnName="VendorName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ThirdCategoryName" msprop:Generator_ColumnVarNameInTable="columnThirdCategoryName" msprop:Generator_ColumnPropNameInRow="ThirdCategoryName" msprop:Generator_ColumnPropNameInTable="ThirdCategoryNameColumn" msprop:Generator_UserColumnName="ThirdCategoryName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VendorStatus" msprop:Generator_ColumnVarNameInTable="columnVendorStatus" msprop:Generator_ColumnPropNameInRow="VendorStatus" msprop:Generator_ColumnPropNameInTable="VendorStatusColumn" msprop:Generator_UserColumnName="VendorStatus" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RegisterDate" msprop:Generator_ColumnVarNameInTable="columnRegisterDate" msprop:Generator_ColumnPropNameInRow="RegisterDate" msprop:Generator_ColumnPropNameInTable="RegisterDateColumn" msprop:Generator_UserColumnName="RegisterDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="VendorDescription" msprop:Generator_ColumnVarNameInTable="columnVendorDescription" msprop:Generator_ColumnPropNameInRow="VendorDescription" msprop:Generator_ColumnPropNameInTable="VendorDescriptionColumn" msprop:Generator_UserColumnName="VendorDescription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VendorsView" />
+      <xs:field xpath="mstns:VendorId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
